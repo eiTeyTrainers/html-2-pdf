@@ -1,18 +1,25 @@
 
 function downloadpdf(){
-    var element = document.getElementById("document")
-    opt = {
-      filename: 'myfile.pdf',
-      image: {type: 'jpeg',quality: 1},
-    }
-    
-    var link = document.getElementById("id-css");
-    link.setAttribute("href", "css/test-pdf.css");
-    //change
-    html2pdf(element)
-    
-     //change back
-    link.setAttribute("href", "css/test.css");
-    //change back
+  var element = document.getElementById("document")
+  opt = {
+    filename: 'myfile.pdf',
+    image: {type: 'jpeg',quality: 1},
+  }
+  
+  var link = document.getElementById("id-css");
+  
+  var body = document.getElementById('id-body');
+  link.setAttribute("href", "css/test-pdf.css");
+  //change
+  body.style.color = "white";
+  html2pdf(element)
+  link.setAttribute("href", "css/test.css")
+  const myTimeout = setTimeout(changeColor, 5);
+}
+
+function changeColor() {
+var body = document.getElementById('id-body');
+
+body.style.color = "black";
 }
 
