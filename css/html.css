@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
 :root{
-    --percentage: 2;
+    --percentage: 10;
     --percentageCalc:calc(1.8deg * var(--percentage))
 }
 .circle-wrap {
@@ -23,7 +23,7 @@
   }
   .circle-wrap .circle .mask .fill {
     clip: rect(0px, 75px, 150px, 0px);
-    background-color: #9e00b1;
+    background-color: #1bc253;
   }
   .circle-wrap .circle .mask.full,
   
