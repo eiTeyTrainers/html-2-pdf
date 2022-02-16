@@ -1,6 +1,7 @@
-var percentage = 30;
+var percentage = 100;
 var root = document.documentElement;
-root.style.cssText = '--percentage : ' + percentage
+root.style.cssText = '--percentage : ' + percentage;
+
 function downloadpdf(){
   var element = document.getElementById("document")
   opt = {
