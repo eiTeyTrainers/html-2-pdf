@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/test.css">
     
-</head>
-<body>      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מבחן טען</title>
+    <link  id="id-css" rel="stylesheet" href="css/html.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+    <script src="app.js"></script>    
+  </head>
+<body id="id-body">      
    
+  <button onclick="downloadpdf()" >download PDF</button>
  
 
        
@@ -20,10 +23,20 @@
             <img  src="img/ster-text.png" class="star"  alt="star">            
             <h1 class="text-top-middle">מאמן כוכב - סיכום מבחן טען</h1>          
           </div>  
+
+
+          <h1 class="soldier-name">ישראל ישראלי</h1>
+          <div class="soldier-location" >
+            <p> ,גדוד 99</p>
+              <p> ,פלוגה 3</p>
+                <p> מחלקה 1 </p>
+          </div>
+
+
+
         <div class="best">
 
-          <div class="flex-container-middle">
-
+          <div class="flex-container-left-half">
             <div>
               <h1 class="text">שיעור תחמושת מרגמה</h1>
               <h1 class="mini-text">בוצע
@@ -63,7 +76,7 @@
            
           </div>
 
-          <div class="flex-container-middle2">
+          <div class="flex-container-right-half">
             <div>
               <h1 class="text">לומדת קשר</h1>
               <h1 class="mini-text">בוצע

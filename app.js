@@ -13,10 +13,10 @@ function downloadpdf(){
   var body = document.getElementById('id-body');
   link.setAttribute("href", "css/pdf.css");
   //change
+  html2pdf(element, opt)
   body.style.color = "white";
-  html2pdf(element)
   link.setAttribute("href", "css/html.css")
-  const myTimeout = setTimeout(changeColor, 5);
+  const myTimeout = setTimeout(changeColor, 8);
 }
 
 function changeColor() {
