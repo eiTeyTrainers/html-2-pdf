@@ -1,4 +1,4 @@
-var percentage = 1;
+var percentage = 50;
 var root = document.documentElement;
 root.style.cssText = '--percentage : ' + percentage;
 function loadPercentage(){
@@ -8,7 +8,7 @@ function loadPercentage(){
 function downloadpdf(){
   var element = document.getElementById("document")
   opt = {
-    filename: 'myfile.pdf',
+    filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
   }
   
