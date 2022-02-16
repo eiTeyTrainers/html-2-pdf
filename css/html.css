@@ -101,11 +101,27 @@ body {
 }
 
 .star {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 2em;
+  
+  color: white;
+
+  
+ 
+}
+.star-top-left-div{
+  
   position: absolute;
-  left: 1vw;
-  top: 1vh;
-  height: 8vh;
-  width: 5vw;
+  display: flex;
+  left: 20px;
+  top: 5px;
+  width: 10vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: start;
 }
 .text-top-middle-div{
   position: absolute;
@@ -183,23 +199,36 @@ body {
   display: flex;
   width: 100%;
 }
-.GreenBootom {
-  position: absolute;
-  left: 0vh;
-  bottom: 0vh;
+.greenBotton {
+
+  
+  display: flex;
+  background: #242E24;
   width: 100%;
-  max-height: 15vh;
-  font-size: 6.8vh;
+  height: 13vh;
+  align-items: flex-end;
+  justify-content: end;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.text-bottom-middle-div{
+  background-color: #3b6124;
+  position: absolute;
+  display: flex;
+  right: 25%;
+  width: 50vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
 }
 .text-bottom-middle {
   position: absolute;
-  left: 86.36vh;
-  bottom: 6.81vh;
-  font-size: 6.81vh;
+
   color: white;
 }
 .text-bottom-right {
-  position: absolute;
   bottom: 100%;
   font-size: 6.81vh;
   color: white;
