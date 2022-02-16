@@ -11,11 +11,11 @@ function downloadpdf(){
   var link = document.getElementById("id-css");
   
   var body = document.getElementById('id-body');
-  link.setAttribute("href", "css/test-pdf.css");
+  link.setAttribute("href", "css/pdf.css");
   //change
   body.style.color = "white";
   html2pdf(element)
-  link.setAttribute("href", "css/test.css")
+  link.setAttribute("href", "css/html.css")
   const myTimeout = setTimeout(changeColor, 5);
 }
 

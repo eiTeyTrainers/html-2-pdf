@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+
+:root {
+  --percentage: 10;
+  --percentageCalc: calc(1.8deg * var(--percentage));
+}
+.circle-wrap {
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #1bc253;
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 1s;
+  transform: rotate(var(--percentageCalc));
+}
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(var(--percentageCalc));
+  }
+}
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+/* .page{
+    background: var(--white);
+    display: block;
+    margin: 0auto;
+    position:relative; 
+    box-shadow:var(--pageShadow);
+    width: 21cm;
+    height: 29.7cm;
+    overflow: hidden;
+    
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans Hebrew";
+}
+.soldier-name {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  right: 44px;
+}
+.soldier-location {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  flex-direction: row-reverse;
+  font-size: 19px;
+  right: 30px;
+  padding: 20px;
+}
+.flex-container-top {
+  display: flex;
+  width: 100%;
+
+}
+.GreenTop {
+  width: 100%;
+  height: 15vh;
+  flex-grow: 1;
+}
+
+.star {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 2em;
+  
+  color: white;
+
+  
+ 
+}
+.star-top-left-div{
+  
+  position: absolute;
+  display: flex;
+  left: 20px;
+  top: 5px;
+  width: 10vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: start;
+}
+.text-top-middle-div{
+  position: absolute;
+  display: flex;
+  right: 25%;
+  width: 50vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.text-top-middle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 2em;
+  font-size: min(5vh,3vw);
+  color: white;
+}
+.best {
+  display: flex;
+}
+.flex-container-left-half {
+  position: relative;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 15%;
+}
+.flex-container-right-half {
+  position: relative;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 15%;
+}
+
+.GreenBox {
+  display: flex;
+  background: #3b6124;
+  width: 23vw;
+  height: 4.5vh;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 2em;
+  font-size: min(3vh,1.7vw);
+  color: white;
+}
+
+.mini-text {
+  display: flex;
+  justify-content: center;
+  margin: 2vh;
+  font-size: min(3vh,1.7vw);
+}
+.vi {
+  display: flex;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 2em; /* a */
+  max-height: 1em;
+  max-height: 1em;
+  color: white;
+}
+.flex-container-bottom {
+  display: flex;
+  width: 100%;
+}
+.greenBotton {
+
+  
+  display: flex;
+  background: #242E24;
+  width: 100%;
+  height: 13vh;
+  align-items: flex-end;
+  justify-content: end;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.text-bottom-middle-div{
+  background-color: #3b6124;
+  position: absolute;
+  display: flex;
+  right: 25%;
+  width: 50vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+.text-bottom-middle {
+  position: absolute;
+
+  color: white;
+}
+.text-bottom-right {
+  bottom: 100%;
+  font-size: 6.81vh;
+  color: white;
+}

@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+:root{
+    --percentage: 10;
+    --percentageCalc:calc(1.8deg * var(--percentage))
+}
+.circle-wrap {
+    margin: 50px auto;
+    width: 150px;
+    height: 150px;
+    background: #e6e2e7;
+    border-radius: 50%;
+  }
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  .circle-wrap .circle .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #1bc253;
+  }
+  .circle-wrap .circle .mask.full,
+  
+  .circle-wrap .circle .fill {
+    
+    animation: fill ease-in-out 1s;
+    transform: rotate(var(--percentageCalc));
+    
+  }
+  @keyframes fill {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(var(--percentageCalc));
+    }
+  }
+  .circle-wrap .inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.page{
+    background: var(--white);
+    display: block;
+    margin: 0auto;
+    position:relative; 
+    box-shadow:var(--pageShadow);
+    width: 21.0cm;
+    height: 29.673cm;
+    overflow: hidden;
+    
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+body{
+    font-family: 'Open Sans Hebrew';
+    
+   
+
+}
+.flex-container-top{
+    display: flex;
+    width: 100%;
+}
+.GreenTop{
+  
+    width: 50px;
+    height:180px;
+    flex-grow: 1;
+      
+}
+
+.star{
+   position:absolute;  
+   left: 15px;
+   top: 20px; 
+   height:70px;
+   width: 80px;
+  
+}
+
+.text-top-middle{
+    position:absolute;
+    left: 200px;
+    top: 45px;   
+    font-size:35px;
+    color: white;
+
+  
+}
+.soldier-name{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    right: 44px;
+}
+.soldier-location{
+    display: flex;
+    position: relative;
+    justify-content: end;
+    flex-direction: row-reverse;
+    font-size: 19px;
+    right: 30px;
+    padding: 20px;
+  
+}
+
+.best{
+    display: flex;
+}
+.flex-container-left-half{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 50%;
+}
+.flex-container-right-half{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 50%;
+}
+.text{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 300px;
+     height: 41px;
+     background: #3B6124;
+     color: white;
+     margin: 20px;
+  
+     font-size:20px;
+
+
+}
+
+.mini-text{
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+    font-size:20px;
+}
+.vi{
+    display: flex;
+    margin: 0px;
+    height: 25px;
+    width: 29px;
+    
+    
+}
+.flex-container-bottom{
+    display: flex;
+    width: 100%;
+}
+.GreenBootom{
+    
+    position:absolute;
+    left: 0px;
+    bottom: 0px;   
+    width: 100%;
+   
+}
+.text-bottom-middle{
+    position:absolute;
+    left: 380px;
+    bottom: 20px;   
+    font-size:55px;
+    color: white;
+}
+.text-bottom-right{
+    position:absolute;
+    left: 650px;
+    bottom: 60px;   
+    font-size:20px;
+    color: white;
+}
+
+
