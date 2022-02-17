@@ -1,5 +1,46 @@
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+
+
+
+.face-button {
+  height: 64px;
+  
+  height: 64px;
+  display: inline-block;
+  border: 3px solid rgb(8, 66, 8);
+  font-size: 20px;
+  font-weight: 500;
+
+  text-align: center;
+  text-decoration: none;
+  color: rgb(8, 66, 8);
+  overflow: hidden;
+  
+}  
+  .icon {
+    margin-right: 6px;
+  }
+
+  .face-primary,
+  .face-secondary {
+    padding: 0 32px;
+    line-height: 32px;
+    transition:  .4s;
+
+  }
+  
+  .face-primary {
+    background-color: #3b6124;
+    color: #fff;
+
+  }
+  
+
+
 :root {
   --percentage: 10;
   --percentageCalc: calc(1.8deg * var(--percentage));
@@ -24,7 +65,7 @@
 }
 .circle-wrap .circle .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background-color: #1bc253;
+  background-color: #3b6124;
 }
 .circle-wrap .circle .mask.full,
 .circle-wrap .circle .fill {
