@@ -139,7 +139,7 @@ body {
   position: absolute;
   display: flex;
   right: 25%;
-  width: 50vw;
+  width: 50%;
   height: 10vh;
   align-items: center;
   justify-content: center;
@@ -180,7 +180,9 @@ body {
   
   display: flex;
   background: #3b6124;
-  width: 30vw;
+  position: relative;
+
+  width: 35vw;
   height: 4.5vh;
   align-items: center;
   justify-content: center;
@@ -221,13 +223,9 @@ body {
   display: flex;
   background: #242E24;
   width: 100%;
-<<<<<<< HEAD
-  height: 13vh;
-=======
   height: 15vh;
   align-items: flex-end;
   justify-content: end;
->>>>>>> master
   position: absolute;
   bottom: 0px;
   width: 100%;

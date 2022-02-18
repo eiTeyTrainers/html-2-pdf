@@ -10,27 +10,19 @@ function downloadpdf(){
   opt = {
     filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
+    html2canvas:  { scale: 1 },
+    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
   }
   
   var link = document.getElementById("id-css");
   
   var body = document.getElementById('id-body');
   var downloadHider = document.getElementById('hide-download');
-  link.setAttribute("href", "css/pdf.css");
   //change
   html2pdf(element, opt)
-  body.style.color = "white";
-  downloadHider.style.display = 'block'
+
   
-  link.setAttribute("href", "css/html.css")
   const myTimeout = setTimeout(changeColor, 200);
 }
 
-function changeColor() {
-  var body = document.getElementById('id-body');
-  var downloadHider = document.getElementById('hide-download');
-  
-  downloadHider.style.display = 'none'
-  body.style.color = "black";
-}
 
