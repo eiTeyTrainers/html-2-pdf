@@ -10,19 +10,21 @@ function downloadpdf(){
   opt = {
     filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
-    html2canvas:  { scale: 1 },
-    jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+    html2canvas:  { scale: 1 , useCORS: true},
+    jsPDF: { format: 'A4', orientation: 'portrait' }
   }
   
   var link = document.getElementById("id-css");
   
   var body = document.getElementById('id-body');
+  
   var downloadHider = document.getElementById('hide-download');
   //change
-  html2pdf(element, opt)
+  html2pdf().set(opt).from(element).then(function(){
+
+  }).save()
 
   
-  const myTimeout = setTimeout(changeColor, 200);
 }
 
 
