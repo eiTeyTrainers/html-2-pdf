@@ -5,9 +5,10 @@ function loadPercentage(){
   document.getElementById("percentage").innerHTML = percentage;
 }
 
-function downloadpdf(){
-  var element = document.getElementById("document")
+async function downloadpdf(){
   var css = document.getElementById("id-css");
+  css.setAttribute("href", "css/pdf.css");
+  var element = document.getElementById("document")
   var body = document.getElementById('id-body');
   var downloadHider = document.getElementById('hide-download');
   opt = {
@@ -18,11 +19,10 @@ function downloadpdf(){
     
   }
   
-  css.setAttribute("href", "css/pdf.css");
   html2pdf().set(opt).from(element).then(function(){
     css.setAttribute("href", "css/html.css");
-
   }).save()
+  
 
   
 }
