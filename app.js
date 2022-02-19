@@ -6,8 +6,11 @@ function loadPercentage(){
 }
 
 async function downloadpdf(){
+  const texts=document.querySelectorAll('#text')
+  texts.forEach(text=>{
+  text.innerHTML = text.innerText.replace(/\s/g,"\u00a0")
+  })
   var css = document.getElementById("id-css");
-  css.setAttribute("href", "css/pdf.css");
   var element = document.getElementById("document")
   var body = document.getElementById('id-body');
   var downloadHider = document.getElementById('hide-download');
@@ -16,15 +19,18 @@ async function downloadpdf(){
     image: {type: 'jpeg',quality: 1},
     html2canvas:  { scale: 2 , useCORS: true},
     jsPDF: { format: 'A4', orientation: 'portrait' },
-    
+    pagebreak: {avoid: 'tr'}
   }
   
+  css.setAttribute("href", "css/pdf.css");
   html2pdf().set(opt).from(element).then(function(){
-    css.setAttribute("href", "css/html.css");
+    setTimeout(Loading, 0)
+    
   }).save()
-  
 
-  
+  function Loading(){
+    css.setAttribute("href", "css/html.css")
+  }
 }
 
 

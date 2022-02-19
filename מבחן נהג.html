@@ -9,7 +9,7 @@
     <link  id="id-css" rel="stylesheet" href="css/html.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="app.js"></script>    
   </head>
-  <body id="id-body">      
+  <body id="document">      
     
     
     
@@ -18,23 +18,23 @@
       
       <div class="flex-container-top">
         <img  src="img/GreenTop.png" class="GreenTop"  alt="GreenTop">
-
-        <div class="text-top-middle-div">
-          <h1 class="text-top-middle">מאמן כוכב - סיכום מבחן נהג</h1>  
+        
+        <div class="text-top-middle-div" >
+          <h1 class="text-top-middle"  >מאמן כוכב - סיכום מבחן נהג</h1>  
         </div>
-
+        
         <div class="star-top-left-div">
           <img  src="img/ster-text.png" class="star"  alt="star">            
         </div>
         
       </div>
-
+      
       <div class="soldier-name-div">  
-      <h1 class="soldier-name">ישראל ישראלי</h1>
+        <h1 class="soldier-name">ישראל ישראלי</h1>
       </div>
-
-
-      <div class="soldier-location" >
+      
+      
+      <div class="soldier-location" id="text">
         <p> ,גדוד 99</p>
         <p> ,פלוגה 3</p>
         <p> מחלקה 1 </p>
@@ -46,27 +46,27 @@
           
           <div >
             <div class="GreenBox">
-              <div class="text">בוחן צוות</div>
+              <div class="text"  id="text">בוחן צוות</div>
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
             </p>
           </div>
           
           <div>
             <div class="GreenBox">
-              <div class="text">VR לומדת</div>
+              <div class="text"  id="text">VR לומדת</div>
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
             </p>
           </div>
           
           <div>
             <div class="GreenBox"> 
-              <div class="text">מאמן נהיגה תרחיש מכת מחץ</div>                       
+              <div class="text"  id="text">מאמן נהיגה תרחיש מכת מחץ</div>                       
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
             </p>
           </div>
@@ -78,36 +78,36 @@
         <div class="flex-container-right-half">
           <div>
             <div class="GreenBox"> 
-              <div class="text">לומדת קשר</div>
+              <div class="text"  id="text">לומדת קשר</div>
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
             </p>
           </div>
           
           <div>
             <div class="GreenBox"> 
-              <div class="text">מע”רים</div>
+              <div class="text"  id="text">מע”רים</div>
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
             </p>
           </div>
           
           <div>
             <div class="GreenBox"> 
-              <div class="text">שיעור עקרונות נהיגה</div>
+              <div class="text"  id="text">שיעור עקרונות נהיגה</div>
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
             </p>
           </div>
           
           <div>
             <div class="GreenBox"> 
-              <div class="text"> "מאמן נהיגה תרחיש "עקרונות</div>
+              <div class="text"  id="text"> "מאמן נהיגה תרחיש "עקרונות</div>
             </div>
-            <p class="mini-text">בוצע
+            <p class="mini-text"  id="text">בוצע
               <img  src="img/vi.png" class="vi"  alt="vi">
               
             </p>
@@ -118,13 +118,13 @@
         
       </div>
       
-
+      
+      
+    </div>
+    <div class="download-button"> 
+      
+      <button style="position: relative; bottom: 3rem;" data-html2canvas-ignore="true" onclick="downloadpdf()">  <div class="face-primary">
         
-      </div>
-      <div class="download-button"> 
-
-        <button style="position: relative; bottom: 3rem;" data-html2canvas-ignore="true" onclick="downloadpdf()">  <div class="face-primary">
-          
           <h2 style="display: inline-block; ;" class="button-text">Download PDF
             <span class="icon fa fa-cloud text  " style="display: inline-block;" ></span>
           </h2>
@@ -154,7 +154,7 @@
           </div>
      
 
-
+          
         </div>
       </div>
 </body>
