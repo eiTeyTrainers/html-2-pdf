@@ -13,7 +13,7 @@ async function downloadpdf(){
   var css = document.getElementById("id-css");
   var element = document.getElementById("document")
   var body = document.getElementById('id-body');
-  var downloadHider = document.getElementById('loading');
+  var loading = document.getElementById('loading');
   opt = {
     filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
@@ -21,15 +21,21 @@ async function downloadpdf(){
     jsPDF: { format: 'A4', orientation: 'portrait' },
     pagebreak: {avoid: 'tr'}
   }
-
+  
   css.setAttribute("href", "css/pdf.css");
+  loading.style.display = 'block'
   html2pdf().set(opt).from(element).then(function(){
     setTimeout(Loading, 0)
     
   }).save()
 
   function Loading(){
-    css.setAttribute("href", "css/html.css");
+    css.setAttribute("href", "css/html.css")
+    setTimeout(stopLoading,5)
+
+  }
+  function stopLoading(){
+    loading.style.display = 'none';
   }
 }
 
