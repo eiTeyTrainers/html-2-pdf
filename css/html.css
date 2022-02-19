@@ -297,12 +297,21 @@ body {
   border-top: 1em solid #3b6124; /* Blue */
   border-bottom : 1em solid #3b6124;
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 8em;
+  height: 8em;
   animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+.loader-img {
+
+  animation: loader-spin 2s linear infinite;
+}
+
+@keyframes loader-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
 }
