@@ -31,7 +31,7 @@ async function downloadpdf(){
 
   function Loading(){
     css.setAttribute("href", "css/html.css")
-    setTimeout(stopLoading,5)
+    setTimeout(stopLoading,1500)
 
   }
   function stopLoading(){
