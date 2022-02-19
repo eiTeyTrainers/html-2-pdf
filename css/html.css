@@ -264,9 +264,4 @@ body {
   font-size: min(4vh,5vw);
   color: white;
 }
-.loading{
-  background-color: rgb(255, 0, 0);
-  color: white;
-  height: 1000em;
-  width: 1000em;
-}
+
