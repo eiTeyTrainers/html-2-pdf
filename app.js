@@ -22,16 +22,19 @@ async function downloadpdf(){
     pagebreak: {avoid: 'tr'}
   }
   
-  css.setAttribute("href", "css/pdf.css");
   loading.style.display = 'block'
-  html2pdf().set(opt).from(element).then(function(){
-    setTimeout(Loading, 0)
-    
-  }).save()
+  setTimeout(() => {
+    css.setAttribute("href", "css/pdf.css");
+    html2pdf().set(opt).from(element).then(function(){
+      setTimeout(Loading, 10)
+      
+    }).save()
+
+  },1000)
 
   function Loading(){
     css.setAttribute("href", "css/html.css")
-    setTimeout(stopLoading,1500)
+    setTimeout(stopLoading,0)
 
   }
   function stopLoading(){
