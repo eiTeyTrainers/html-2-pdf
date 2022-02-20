@@ -197,7 +197,7 @@ body {
 .mini-text {
   display: flex;
   justify-content: center;
-  margin: 1.5vh;
+  margin: 1vh;
   font-size: min(3vh,3vw);
 }
 .vi {
