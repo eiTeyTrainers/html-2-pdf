@@ -6,6 +6,7 @@ function loadPercentage(){
   document.getElementById("percentage").innerHTML = percentage;
 }
 
+
 async function downloadpdf(){
   const texts=document.querySelectorAll('#text')
   texts.forEach(text=>{
