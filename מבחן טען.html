@@ -10,120 +10,166 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
     <script src="app.js"></script>    
   </head>
-<body id="id-body">      
-   
-  <button onclick="downloadpdf()" >download PDF</button>
- 
+  <body id="id-body" onload="loadPercentage()">      
+    
+    
+    
+    <div class="page" id="document">
+      
+      <div class="flex-container-top">
+        <img  src="img/GreenTop.png" class="GreenTop"  alt="GreenTop">
 
-       
-      <div class="page" id="document">
-
-          <div class="flex-container-top">
-            <img  src="img/GreenTop.png" class="GreenTop"  alt="GreenTop">
-            <img  src="img/ster-text.png" class="star"  alt="star">            
-            <h1 class="text-top-middle">מאמן כוכב - סיכום מבחן טען</h1>          
-          </div>  
-
-
-          <h1 class="soldier-name">ישראל ישראלי</h1>
-          <div class="soldier-location" >
-            <p> ,גדוד 99</p>
-              <p> ,פלוגה 3</p>
-                <p> מחלקה 1 </p>
-          </div>
-
-
-
-        <div class="best">
-
-          <div class="flex-container-left-half">
-            <div>
-              <h1 class="text">שיעור תחמושת מרגמה</h1>
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-            </h1>
-            </div>
-
-            <div>
-              <h1 class="text">לומדת תותח וצריח</h1>
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-            </h1>
-            </div>
-
-            <div>
-              <h1 class="text">שיעור עקרונות נהיגה</h1>                       
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-             </h1>
-            </div>
-
-            <div>
-                <h1 class="text">VR לומדת</h1>                       
-                <h1 class="mini-text">בוצע
-                <img  src="img/vi.png" class="vi"  alt="vi">
-               </h1>
-              </div>
-
-              <div>
-                <h1 class="text">מבחן טען</h1>                       
-                <h1 class="mini-text">בוצע
-                <img  src="img/vi.png" class="vi"  alt="vi">
-               </h1>
-              </div>
-            
-
-           
-          </div>
-
-          <div class="flex-container-right-half">
-            <div>
-              <h1 class="text">לומדת קשר</h1>
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-            </h1>
-            </div>
-
-            <div>
-              <h1 class="text">לומדת תותח וצריח</h1>
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-            </h1>
-            </div>
-
-            <div>
-              <h1 class="text">לומדת מקלעים</h1>
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-            </h1>
-            </div>
-
-            <div>
-              <h1 class="text">מע”רים</h1>
-              <h1 class="mini-text">בוצע
-              <img  src="img/vi.png" class="vi"  alt="vi">
-            </h1>
-            </div>
-
-            <div>
-                <h1 class="text">"מאמן נהיגה תרחיש “עקרונות</h1>
-                <h1 class="mini-text">בוצע
-                <img  src="img/vi.png" class="vi"  alt="vi">
-              </h1>
-              </div>
-
-          </div>
-   
-
+        <div class="text-top-middle-div">
+          <h1 class="text-top-middle">מאמן כוכב - סיכום מבחן נהג</h1>  
         </div>
 
-          <div class="flex-container-bottom">
-            <img  src="img/GreenBottom.png" class="GreenBootom"  alt="GreenBootom">
-            <h1 class="text-bottom-middle">80</h1>
-            <h2 class="text-bottom-right">:ציון כללי</h2>
+        <div class="star-top-left-div">
+          <img  src="img/ster-text.png" class="star"  alt="star">            
+        </div>
+        
+      </div>
+
+      <div class="soldier-name-div">  
+      <h1 class="soldier-name">ישראל ישראלי</h1>
+      </div>
+
+
+      <div class="soldier-location" >
+        <p> ,גדוד 99</p>
+        <p> ,פלוגה 3</p>
+        <p> מחלקה 1 </p>
+      </div>
+      
+        <div class="best">
+          
+          <div class="flex-container-left-half">
+            
+            <div >
+              <div class="GreenBox">
+                <div class="text">בוחן צוות</div>
+              </div>
+              <p class="mini-text">בוצע
+                <img  src="img/vi.png" class="vi"  alt="vi">
+              </p>
+            </div>
+            
+            <div>
+              <div class="GreenBox">
+                <div class="text">VR לומדת</div>
+              </div>
+              <p class="mini-text">בוצע
+                <img  src="img/vi.png" class="vi"  alt="vi">
+              </p>
+            </div>
+            
+            <div>
+              <div class="GreenBox"> 
+                <div class="text">מאמן נהיגה תרחיש מכת מחץ</div>                       
+          </div>
+          <p class="mini-text">בוצע
+            <img  src="img/vi.png" class="vi"  alt="vi">
+          </p>
+        </div>
+        
+        
+        
+      </div>
+      
+      <div class="flex-container-right-half">
+        <div>
+          <div class="GreenBox"> 
+            <div class="text">לומדת קשר</div>
+          </div>
+          <p class="mini-text">בוצע
+            <img  src="img/vi.png" class="vi"  alt="vi">
+          </p>
+        </div>
+        
+        <div>
+          <div class="GreenBox"> 
+            <div class="text">לומדת תותח וצריח</div>
+          </div>
+          <p class="mini-text">בוצע
+            <img  src="img/vi.png" class="vi"  alt="vi">
+          </p>
+        </div>
+        
+        <div>
+          <div class="GreenBox"> 
+            <div class="text">לומדת מקלעים</div>
+          </div>
+          <p class="mini-text">בוצע
+            <img  src="img/vi.png" class="vi"  alt="vi">
+          </p>
+        </div>
+        
+        <div>
+          <div class="GreenBox"> 
+            <div class="text">מע”רים</div>
+          </div>
+          <p class="mini-text">בוצע
+            <img  src="img/vi.png" class="vi"  alt="vi">
+          </p>
+          </div>
+          
+      
+        
+        <div>
+          <div class="GreenBox"> 
+            <div class="text">“מאמן נהיגה תרחיש “עקרונות</div>
+          </div>
+          <p class="mini-text">בוצע
+            <img  src="img/vi.png" class="vi"  alt="vi">
+          </p>
+          </div>
+          
+        </div>
+        
+
+      </div>
+
+
+<button onclick="downloadpdf()" >download</button>
+
+                <!-- crates a button -->
+
+                
+         
+<!--               
+              <button class="pdf-button"  data-html2canvas-ignore="true"
+               onclick="downloadpdf()">
                
-         </div>   
-            </main>
-   </div>
-</body>
-</html>
+                  <div class="face-primary">
+                <span class="icon fa fa-cloud"></span>
+                download PDF
+              </div>
+              
+              <div class="face-secondary">
+                <span class="icon fa fa-hdd-o"></span>
+                Name: Test
+              </div>
+            </button>
+           -->
+                  <!-- end of button -->
+    
+
+      <div class="flex-container-bottom">
+        <div class="greenBottom">
+            <div class="text-bottom-middle-div">
+                <h1 class="text-bottom-middle">95</h1>  
+            </div>
+            <div class="text-bottom-middle-right-div">
+              <h1 class="text-bottom-right">:ציון סופי</h1>  
+          </div>
+     
+
+
+        </div>
+      </div>
+      
+    </div>
+    
+    <div id="hide-download" style="z-index: 10; width: 100%; height: 100em; display: none; background-color: rgb(255, 255, 255); position: absolute; bottom: 6em;"></div>
+  </body>
+  
+  </html>
