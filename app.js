@@ -9,7 +9,6 @@ async function downloadpdf(){
   const texts=document.querySelectorAll('#text')
   texts.forEach(text=>{
   text.innerHTML = text.innerText.replace(/\s/g,"\u00a0")
-  console.log(text);
   })
   var css = document.getElementById("id-css");
   var element = document.getElementById("document")
