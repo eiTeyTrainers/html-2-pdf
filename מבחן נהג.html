@@ -7,158 +7,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מבחן נהג</title>
     <link  id="id-css" rel="stylesheet" href="css/html.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
-    <script src="app.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="app.js"></script>    
   </head>
-  <body id="id-body" onload="loadPercentage()">      
+  <body id="document">      
     
     
+    
+    <div id="loading" data-html2canvas-ignore="true" style=" z-index: 3; width: 100%; height: 100%; display: none; background-color: rgb(255, 255, 255); position: absolute; bottom: 0em;">
+      <div  style="position: absolute;top: 50%; left: 50%;transform: translate(-50%,-50%);"  data-html2canvas-ignore="true" >
+      <div class="loader">
+        <img src="/img/star3.png" alt=""  class="loader-img">
+      </div>
+    </div>
+    </div>
     
     <div class="page" id="document">
       
       <div class="flex-container-top">
         <img  src="img/GreenTop.png" class="GreenTop"  alt="GreenTop">
-
-        <div class="text-top-middle-div">
-          <h1 class="text-top-middle">מאמן כוכב - סיכום מבחן נהג</h1>  
+        
+        <div class="text-top-middle-div" >
+          <h1  id="text" class="text-top-middle"  >מאמן כוכב - סיכום מבחן נהג</h1>  
         </div>
-
+        
         <div class="star-top-left-div">
           <img  src="img/ster-text.png" class="star"  alt="star">            
         </div>
         
       </div>
-
+      
       <div class="soldier-name-div">  
-      <h1 class="soldier-name">ישראל ישראלי</h1>
+        <h1 class="soldier-name">ישראל ישראלי</h1>
       </div>
-
-
-      <div class="soldier-location" >
+      
+      
+      <div class="soldier-location" id="text">
         <p> ,גדוד 99</p>
         <p> ,פלוגה 3</p>
         <p> מחלקה 1 </p>
       </div>
       
-        <div class="best">
+      <div class="best">
+        
+        <div class="flex-container-left-half">
           
-          <div class="flex-container-left-half">
-            
-            <div >
-              <div class="GreenBox">
-                <div class="text">בוחן צוות</div>
-              </div>
-              <p class="mini-text">בוצע
-                <img  src="img/vi.png" class="vi"  alt="vi">
-              </p>
+          <div >
+            <div class="GreenBox">
+              <div class="text"  id="text">בוחן צוות</div>
             </div>
-            
-            <div>
-              <div class="GreenBox">
-                <div class="text">VR לומדת</div>
-              </div>
-              <p class="mini-text">בוצע
-                <img  src="img/vi.png" class="vi"  alt="vi">
-              </p>
-            </div>
-            
-            <div>
-              <div class="GreenBox"> 
-                <div class="text">מאמן נהיגה תרחיש מכת מחץ</div>                       
+            <p class="mini-text" >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+            </p>
           </div>
-          <p class="mini-text">בוצע
-            <img  src="img/vi.png" class="vi"  alt="vi">
-          </p>
+          
+          <div>
+            <div class="GreenBox">
+              <div class="text"  id="text">VR לומדת</div>
+            </div>
+            <p class="mini-text"  >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+            </p>
+          </div>
+          
+          <div>
+            <div class="GreenBox"> 
+              <div class="text"  id="text">מאמן נהיגה תרחיש מכת מחץ</div>                       
+            </div>
+            <p class="mini-text"  >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+            </p>
+          </div>
+          
+          
+          
         </div>
         
+        <div class="flex-container-right-half">
+          <div>
+            <div class="GreenBox"> 
+              <div class="text"  id="text">לומדת קשר</div>
+            </div>
+            <p class="mini-text"  >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+            </p>
+          </div>
+          
+          <div>
+            <div class="GreenBox"> 
+              <div class="text"  id="text">מע”רים</div>
+            </div>
+            <p class="mini-text"  >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+            </p>
+          </div>
+          
+          <div>
+            <div class="GreenBox"> 
+              <div class="text" >שיעור עקרונות נהיגה</div>
+            </div>
+            <p class="mini-text"  >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+            </p>
+          </div>
+          
+          <div>
+            <div class="GreenBox"> 
+              <div class="text" id="text" > "מאמן נהיגה תרחיש "עקרונות</div>
+            </div>
+            <p class="mini-text"  >בוצע
+              <img  src="img/vi.png" class="vi"  alt="vi">
+              
+            </p>
+          </div>
+          
+        </div>
         
         
       </div>
       
-      <div class="flex-container-right-half">
-        <div>
-          <div class="GreenBox"> 
-            <div class="text">לומדת קשר</div>
-          </div>
-          <p class="mini-text">בוצע
-            <img  src="img/vi.png" class="vi"  alt="vi">
-          </p>
-        </div>
-        
-        <div>
-          <div class="GreenBox"> 
-            <div class="text">מע”רים</div>
-          </div>
-          <p class="mini-text">בוצע
-            <img  src="img/vi.png" class="vi"  alt="vi">
-          </p>
-        </div>
-        
-        <div>
-          <div class="GreenBox"> 
-            <div class="text">שיעור עקרונות נהיגה</div>
-          </div>
-          <p class="mini-text">בוצע
-            <img  src="img/vi.png" class="vi"  alt="vi">
-          </p>
-        </div>
-        
-        <div>
-          <div class="GreenBox"> 
-            <div class="text"> "מאמן נהיגה תרחיש "עקרונות</div>
-          </div>
-          <p class="mini-text">בוצע
-            <img  src="img/vi.png" class="vi"  alt="vi">
-          </p>
-          </div>
+      
+      
+   
+
+    
+      <button data-html2canvas-ignore="true" onclick="downloadpdf()">  
+        <div class="face-primary">
+          <h2 style="display: inline-block;" >Download PDF
+            <span class="icon fa fa-cloud text  " style="display: inline-block;" ></span>
+          </h2>
           
         </div>
+      </button>
         
-        
-      </div>
-
-
-<button onclick="downloadpdf()" >download</button>
-
-                <!-- crates a button -->
-
-                
-         
-<!--               
-              <button class="pdf-button"  data-html2canvas-ignore="true"
-               onclick="downloadpdf()">
-               
-                  <div class="face-primary">
-                <span class="icon fa fa-cloud"></span>
-                download PDF
-              </div>
-              
-              <div class="face-secondary">
-                <span class="icon fa fa-hdd-o"></span>
-                Name: Test
-              </div>
-            </button>
-           -->
-                  <!-- end of button -->
-    
-
+      
+      
       <div class="flex-container-bottom">
+        <div class="greenBotton">
+          <h1 class="botton-text"></h1>
         <div class="greenBottom">
             <div class="text-bottom-middle-div">
                 <h1 class="text-bottom-middle">95</h1>  
             </div>
             <div class="text-bottom-middle-right-div">
               <h1 class="text-bottom-right">:ציון סופי</h1>  
+            </div>
+            
+            
           </div>
-     
-
-
         </div>
       </div>
-      
     </div>
-    
-    <div id="hide-download" style="z-index: 10; width: 100%; height: 100em; display: none; background-color: rgb(255, 255, 255); position: absolute; bottom: 6em;"></div>
-  </body>
-  
-  </html>
+    </body>
+
+</html>

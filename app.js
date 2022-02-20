@@ -5,32 +5,42 @@ function loadPercentage(){
   document.getElementById("percentage").innerHTML = percentage;
 }
 
-function downloadpdf(){
+async function downloadpdf(){
+  const texts=document.querySelectorAll('#text')
+  texts.forEach(text=>{
+  text.innerHTML = text.innerText.replace(/\s/g,"\u00a0")
+  console.log(text);
+  })
+  var css = document.getElementById("id-css");
   var element = document.getElementById("document")
+  var body = document.getElementById('id-body');
+  var loading = document.getElementById('loading');
   opt = {
     filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
+    html2canvas:  { scale: 2 , useCORS: true},
+    jsPDF: { format: 'A4', orientation: 'portrait' },
+    pagebreak: {avoid: 'tr'}
   }
   
-  var link = document.getElementById("id-css");
-  
-  var body = document.getElementById('id-body');
-  var downloadHider = document.getElementById('hide-download');
-  link.setAttribute("href", "css/pdf.css");
-  //change
-  html2pdf(element, opt)
-  body.style.color = "white";
-  downloadHider.style.display = 'block'
-  
-  link.setAttribute("href", "css/html.css")
-  const myTimeout = setTimeout(changeColor, 200);
+  loading.style.display = 'block'
+  setTimeout(() => {
+    css.setAttribute("href", "css/pdf.css");
+    html2pdf().set(opt).from(element).then(function(){
+      setTimeout(Loading, 10)
+      
+    }).save()
+
+  },1000)
+
+  function Loading(){
+    css.setAttribute("href", "css/html.css")
+    setTimeout(stopLoading,0)
+
+  }
+  function stopLoading(){
+    loading.style.display = 'none';
+  }
 }
 
-function changeColor() {
-  var body = document.getElementById('id-body');
-  var downloadHider = document.getElementById('hide-download');
-  
-  downloadHider.style.display = 'none'
-  body.style.color = "black";
-}
 
