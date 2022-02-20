@@ -18,8 +18,8 @@ async function downloadpdf(){
   opt = {
     filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
-    html2canvas:  { scale: 2 , useCORS: true},
-    jsPDF: { format: 'A4', orientation: 'portrait' },
+    html2canvas:  { scale: 2 , useCORS: true, dpi: 76, logging: true },
+    jsPDF: {unit: 'in', format: 'a4', orientation: 'portrait'},
     pagebreak: {avoid: 'tr'}
   }
   
