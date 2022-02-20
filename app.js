@@ -1,6 +1,7 @@
 var percentage = 50;
 var root = document.documentElement;
 root.style.cssText = '--percentage : ' + percentage;
+
 function loadPercentage(){
   document.getElementById("percentage").innerHTML = percentage;
 }

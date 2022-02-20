@@ -11,7 +11,10 @@
 
 
 
+.body{
+    background-color: aqua;
 
+}
 
 
   
@@ -36,9 +39,6 @@
   }
 body{
     font-family: 'Open Sans Hebrew';
-    
-   
-
 }
 .flex-container-top{
     display: flex;

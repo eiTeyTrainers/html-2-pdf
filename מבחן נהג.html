@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>מבחן נהג</title>
     <link  id="id-css" rel="stylesheet" href="css/html.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="app.js"></script>    
   </head>
-  <body id="document">      
+  <body id="document" class="body">      
     
     
     
@@ -27,7 +26,7 @@
         <img  src="img/GreenTop.png"  class="GreenTop"  alt="GreenTop">
         
         <div class="text-top-middle-div" >
-          <h1   class="text-top-middle"  >מאמן &nbsp;כוכב - סיכום &nbsp;מבחן &nbsp;נהג</h1>  
+          <h1   class="text-top-middle"  >מאמן&nbsp;כוכב - סיכום &nbsp;מבחן &nbsp;נהג</h1>  
         </div>
         
         <div class="star-top-left-div">
@@ -41,10 +40,10 @@
       </div>
       
       
-      <div class="soldier-location" id="text">
-        <p> ,גדוד 99</p>
-        <p> ,פלוגה 3</p>
-        <p> מחלקה 1 </p>
+      <div class="soldier-location" >
+        <p id="text">,גדוד 99</p>
+        <p id="text"> פלוגה 3</p>
+        <p id="text"> מחלקה 1 ,</p>
       </div>
       
       <div class="best">
@@ -126,10 +125,8 @@
       </div>
       
       
-      
-   
-
     
+                  
       <button data-html2canvas-ignore="true" onclick="downloadpdf()">  
         <div class="face-primary">
           <h2 style="display: inline-block;" >Download PDF
@@ -138,18 +135,19 @@
           
         </div>
       </button>
-        
+
+   
       
       
-      <div class="flex-container-bottom">
+      <div class="flex-container-bottom" style="height: 16em; ">
         <div class="greenBotton">
           <h1 class="botton-text"></h1>
-        <div class="greenBottom">
+          <div class="greenBottom" >
             <div class="text-bottom-middle-div">
-                <h1 class="text-bottom-middle">95</h1>  
+              <h1 class="text-bottom-middle">95</h1>  
             </div>
             <div class="text-bottom-middle-right-div">
-              <h1 class="text-bottom-right">:ציון סופי</h1>  
+              <h1 class="text-bottom-right" id="text">:ציון סופי</h1>  
             </div>
             
             
@@ -157,6 +155,8 @@
         </div>
       </div>
     </div>
-    </body>
-
-</html>
+  </body>
+  
+      
+  
+  </html>
