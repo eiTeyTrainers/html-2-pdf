@@ -245,12 +245,9 @@ body {
 .greenBottom {
 
   
-  display: flex;
   background: #242E24;
   width: 100%;
   height: 15vh;
-  align-items: flex-end;
-  justify-content: end;
   position: absolute;
   bottom: 0px;
   width: 100%;
