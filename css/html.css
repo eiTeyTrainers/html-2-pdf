@@ -113,10 +113,10 @@ body {
   text-overflow: ellipsis;
   display: block;
  
-  min-height: min(13vh,4vw);
-  max-width: min(9vh,13vw);
+  min-height: min(8vh,11vw);
+  max-width: min(11vh,11vw);
  
-  color: white;
+
  
   
  
@@ -196,7 +196,7 @@ body {
 .mini-text {
   display: flex;
   justify-content: center;
-  margin: 0.5vh;
+  margin: 1vh;
   font-size: min(2.5vh,3vw);
 }
 .vi {
@@ -310,4 +310,54 @@ body {
 @keyframes loader-spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(-360deg); }
+}
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+  
+  min-height: min(11vh,11vw);
+  max-width: min(11vh,11vw);
+
+}
+.circular-progress {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  left: 11vw;
+  display: flex;
+  justify-content: center;
+  
+  
+ 
+  
+}
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  
+}
+.value-container {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: min(4.5vh,4vw);
+  color: #000000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
 }
