@@ -1,7 +1,6 @@
 
-@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 
-
+/* 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 
 
@@ -15,23 +14,23 @@
   border: 3px solid rgb(8, 66, 8);
   font-size: 20px;
   font-weight: 500;
-
+  
   text-align: center;
   text-decoration: none;
   color: rgb(8, 66, 8);
   overflow: hidden;
   
 }  
-  .icon {
-    margin-right: 6px;
-  }
+.icon {
+  margin-right: 6px;
+}
 
   .face-primary,
   .face-secondary {
     padding: 0 32px;
     line-height: 32px;
     transition:  .4s;
-
+    
   }
   
   .face-primary {
@@ -40,18 +39,14 @@
 
   }
   
-
-
-:root {
-  --percentage: 10;
-  --percentageCalc: calc(1.8deg * var(--percentage));
-}
-
-
-
-
-
- /* .page{
+  
+  
+  :root {
+    --percentage: 10;
+    --percentageCalc: calc(1.8deg * var(--percentage));
+  } */
+  
+  /* .page{
     background: var(--white);
     display: block;
     margin: 0auto;
@@ -61,17 +56,28 @@
     height: 29.7cm;
     overflow: hidden;
     
-}  */
+  }  */
+  @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+  
+  
+  html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  font-family: "Open Sans Hebrew";
+}
+
+
+
+
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Open Sans Hebrew";
-}
+
 .soldier-name-div{
   position: relative;
   right: 20px;
@@ -196,7 +202,7 @@ body {
 .mini-text {
   display: flex;
   justify-content: center;
-  margin: 1vh;
+  margin: 2vh;
   font-size: min(2.5vh,3vw);
 }
 .vi {
@@ -235,24 +241,18 @@ body {
 }
 
 
-.flex-container-bottom {
-  display: flex;
-  width: 100%;
-}
-.greenBottom {
 
-  
-  background: #242E24;
-  width: 100%;
-  height: 15vh;
-  align-items: flex-end;
-  justify-content: end;
-  position: absolute;
+.greenBottom {
+  position: fixed;
+  display: flex;
   bottom: 0px;
   width: 100%;
+  height: 13vh;
+  background: #242E24;
+ 
 }
 
-.text-bottom-middle-div{
+/* .text-bottom-middle-div{
   
   position: absolute;
   display: flex;
@@ -283,11 +283,16 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  line-height: 2em; /* a */
+  line-height: 2em;  
   max-height: 2em;
   font-size: min(4vh,5vw);
   color: white;
-}
+} 
+*/
+
+
+
+
 .loader {
   border: 1em solid #376946; /* Light grey */
   border-top: 1em solid #3b6124; /* Blue */
@@ -346,7 +351,6 @@ body {
   width: 84%;
   background-color: #ffffff;
   border-radius: 50%;
-
   overflow: hidden;
   text-overflow: ellipsis;
   
@@ -354,8 +358,8 @@ body {
 }
 .value-container {
   position: relative;
-  font-family: "Poppins", sans-serif;
   font-size: min(4.5vh,4vw);
+  font-weight: 400;
   color: #000000;
   overflow: hidden;
   text-overflow: ellipsis;
