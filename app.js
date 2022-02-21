@@ -34,6 +34,7 @@ async function downloadpdf(){
   },1000)
 
   function Loading(){
+    css.setAttribute("href", "css/html.css");
     setTimeout(stopLoading,0)
 
   }
