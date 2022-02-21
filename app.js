@@ -1,6 +1,7 @@
 var percentage = 50;
 var root = document.documentElement;
 root.style.cssText = '--percentage : ' + percentage;
+
 function loadPercentage(){
   document.getElementById("percentage").innerHTML = percentage;
 }
@@ -9,7 +10,6 @@ async function downloadpdf(){
   const texts=document.querySelectorAll('#text')
   texts.forEach(text=>{
   text.innerHTML = text.innerText.replace(/\s/g,"\u00a0")
-  console.log(text);
   })
   var css = document.getElementById("id-css");
   var element = document.getElementById("document")
@@ -18,8 +18,8 @@ async function downloadpdf(){
   opt = {
     filename: document.title + '.pdf',
     image: {type: 'jpeg',quality: 1},
-    html2canvas:  { scale: 2 , useCORS: true},
-    jsPDF: { format: 'A4', orientation: 'portrait' },
+    html2canvas:  { scale: 2 , useCORS: true, dpi: 76, logging: true },
+    jsPDF: {unit: 'in', format: 'a4', orientation: 'portrait'},
     pagebreak: {avoid: 'tr'}
   }
   
@@ -34,7 +34,6 @@ async function downloadpdf(){
   },1000)
 
   function Loading(){
-    css.setAttribute("href", "css/html.css")
     setTimeout(stopLoading,0)
 
   }
