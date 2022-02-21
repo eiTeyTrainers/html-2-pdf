@@ -7,34 +7,17 @@
 
 
 
-
-
-
-
-.body{
-    background-color: aqua;
-    background: var(--white);
-    display: block;
-    margin: 0auto;     
-    box-shadow:var(--pageShadow);
-    width: 21.0cm;
-    height: 29.673cm;
-    overflow: hidden;
-}
-
-
   
-/* .page{
+ .page{
     background: var(--white);
     display: block;
-    margin: 0auto;
     position:relative; 
     box-shadow:var(--pageShadow);
-    width: 21.0cm;
-    height: 29.673cm;
+    width: 21.41.33858267708333vw;
+    height: 102.98431704315887vh;
     overflow: hidden;
     
-} */
+} 
 
 
 * {
