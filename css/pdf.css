@@ -126,6 +126,7 @@ body{
 .flex-container-bottom {
     display: flex;
     width: 100%;
+    height: 256px;
   }
   .greenBottom {
   

@@ -30,15 +30,17 @@ async function downloadpdf(){
       setTimeout(Loading, 10)
       
     }).save()
-
+    
   },1000)
-
+  
   function Loading(){
     setTimeout(stopLoading,0)
-
+    
   }
   function stopLoading(){
+    css.setAttribute("href", "css/html.css");
     loading.style.display = 'none';
+
   }
 }
 
